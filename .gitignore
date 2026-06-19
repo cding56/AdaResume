@@ -6,7 +6,6 @@ _freeze/
 
 # Misc Files
 ~*.docx
-course_progress_summary.docx
 
 # Rendered output files (keep source .qmd files)
 index.html
@@ -15,10 +14,6 @@ index.docx
 index.tex
 index.log
 index_files/
-syllabus.html
-weekly-content.html
-readings-notes-slides.html
-maintainer-guide.html
 
 # LaTeX intermediate files
 *.aux
@@ -78,7 +73,6 @@ $RECYCLE.BIN/
 .idea/
 *.swp
 *.swo
-*~
 
 # Temporary files
 *.tmp

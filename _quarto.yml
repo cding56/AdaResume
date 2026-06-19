@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Ada Lovelace"
+  description: "Resume of Ada Lovelace."
+  navbar:
+    title: "Ada Lovelace"
+  page-footer:
+    center: "Built with [Quarto](https://quarto.org/)."
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: right
+  pdf:
+    geometry:
+      - margin=1in

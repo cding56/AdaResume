@@ -158,10 +158,10 @@ After the Setup step finishes, confirm that the website renders cleanly on your 
 You can run the build yourself:
 
 ```bash
-quarto render
+quarto preview
 ```
 
-…then check that the command exits without errors and that `_site/index.html` and `_site/index.pdf` are both produced. Or use this prompt to have your agentic IDE do it:
+Then check that the command exits without errors and that `_site/index.html` and `_site/index.pdf` are both produced. Or use this prompt to have your agentic IDE do it:
 
 ```
 You are an agentic IDE assistant working inside a Quarto resume website project. Verify that the site renders cleanly. Do exactly the following — no more, no less.
@@ -228,12 +228,12 @@ Hard prohibitions:
 
 To publish the site with `quarto publish gh-pages`, the project must live in a GitHub repository owned by you. There are two common starting points:
 
-- **Path A — You forked the template on GitHub.** Your fork is already a repository on your account. You may want to rename it to something personal such as `resume` or `<your-username>.github.io`.
+- **Path A — You forked the template on GitHub.** Your fork is already a repository on your account. You may want to rename it to something personal.
 - **Path B — You downloaded the template files manually.** You will need to initialize a local git repo and create a fresh repo on GitHub.
 
 Either way, install the GitHub CLI (`gh`) first if you have not — see https://cli.github.com/ — and authenticate with `gh auth login`.
 
-Use this prompt to have your agentic IDE handle it:
+If you wish, you can use this prompt to have your agentic IDE handle it:
 
 ```
 You are an agentic IDE assistant. Configure this local Quarto resume project as a GitHub repository owned by the user. Follow every step in order. Ask the user before any destructive action.

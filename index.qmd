@@ -1,5 +1,114 @@
 ---
-title: "Ada Lovelace"
+title: "Ada Lovelace, JD PhD"
 ---
 
-Resume content will appear here.
++44 20 7946 0958 | <ada.lovelace@email.co.uk> | [linkedin.com/in/adalovelace](https://www.linkedin.com/in/adalovelace/)
+
+## Education
+
+### Ph.D., Educational Leadership & Policy Analysis
+
+*University of Cambridge · 2018*
+
+Dissertation keywords: learning measurement, design of experiments, psychometrics, multi-site research, longitudinal analysis.
+
+### Juris Doctor
+
+*University of London, Faculty of Laws — London, England · 2008*
+
+Founded a scholarship fundraising programme for LGBT+ law students.
+
+### B.A., History
+
+*University of Oxford — Oxford, England · 2003*
+
+Founded Peer Diversity Educators, a campus organisation providing diversity and inclusion education.
+
+## Instructional Experience (Selected)
+
+### Teaching Professor
+
+*University of Cambridge — Cambridge, England · 1/2021 – Present*
+
+- Teach courses providing instruction in programming (Python, SQL, and related), statistics, machine learning, reproducible publication, and large-scale data science processes. Example courses taught include:
+    - MATH 755 — Environments and Tools for Large-Scale Behavioural Data Science
+    - MATH 750 — Programming for Human Behavioural Data Science
+    - MATH 711 — Reproducible Scientific Publishing
+    - STAT 822 — Introduction to Quantitative Inquiry
+    - STAT 823 — Data Management for Policy Analysis
+- Redesigned and delivered beginner and intermediate Python programming curriculum; created and delivered a new course on reproducible scientific publication and dissemination.
+- Teach general statistics (chi-square, correlation, ANOVA, regression, and related). Also teach data science models and methods including k-nearest neighbours, advanced regression, tree-based algorithms, support vector machines, and neural networks.
+- Teach concepts related to the design of experiments and the analysis of unstructured data.
+- Provide students with hands-on experience across a wide variety of AI/ML use cases that span multiple business areas and advanced analytic techniques; teach and mentor junior data scientists.
+
+## Professional Experience
+
+### Chief Data Scientist
+
+*Analytical Engine Data, Ltd. — Cambridge, England · 1/2021 – Present*
+
+Lead data science consulting engagements across sectors including higher education, healthcare, government (borough, county, and national), finance, and insurance, with a focus on applied machine learning, AI integration, and research analytics. Provide technical leadership on projects that span the full data science lifecycle—from gathering requirements and designing scalable models to deploying final solutions for end users.
+
+- Advise clients on data strategy, statistical methodology, and AI/ML integration, including the use of natural language processing, large language models, and generative AI.
+- Design and implement sophisticated analytical work, including data wrangling, feature engineering, model training, evaluation, and interpretation; develop reproducible workflows with an emphasis on stakeholder communication.
+- Support long- and short-term consulting projects with deliverables that include decision support tools, predictive models, and analytics-driven insights.
+- Selected clients: GlaxoSmithKline, AstraZeneca, the Bank of England, the National Health Service, HM Treasury, the Royal Mail, the British Broadcasting Corporation, the University of Edinburgh, Lloyd's of London, the Royal Statistical Society, and others.
+
+### Data Scientist + Data Governance Consultant, Government Client
+
+*Whitehall Analytics — London, England · 3/2020 – 1/2021*
+
+Provided expertise on advanced analytics and data governance for the Office of the Chief Data Officer at a major government department.
+
+- Experience managing multiple technical projects simultaneously, designed to establish and build a data-driven culture.
+- Experience gathering and interpreting business requirements to design and create scalable data science solutions in a regulatory environment (including, but not limited to, insurance, healthcare, and finance).
+- Served as subject-matter expert on advanced analytics, data standards, data quality, data sharing, and data policy.
+- Planned and executed qualitative and quantitative research designed to understand the client's data-related capacity and needs.
+
+### Data Scientist
+
+*UCAS (Universities and Colleges Admissions Service) — Cheltenham, England · 8/2018 – 2/2020*
+
+Hired as the inaugural research data scientist and introduced the organisation to the discipline of data science. Oversaw research operations, including the selection of appropriate research questions, choice of methods, and dissemination strategies. Supervised project managers and contractors in implementing a data warehouse, building catalogues of predictive models to predict the behaviour of university applicants, and studying the behaviour and experiences of university applicants.
+
+- Co-authored successful grant applications totalling nearly £2M; negotiated in-kind support from private and public sources.
+- Established new collaborations with institutions including the University of Cambridge and the Open University (serving as a liaison between multiple universities and private organisations).
+- Conducted original quantitative research related to university admissions and enrolment, and collaborated with external researchers; planned and implemented a robust research agenda including randomised controlled trials, econometric quasi-experimental analysis, and other techniques involving machine learning methods.
+
+### Senior Divisional Policy Adviser
+
+*University of London — London, England · 6/2017 – 8/2018*
+
+Served as the Division of Enrolment Management's chief researcher, providing institution-wide research support services for faculty, staff, and students. Conducted quantitative and qualitative research related to university admissions and enrolment.
+
+- Recruited and supported fellow researchers in the planning, development, and implementation of research.
+- Developed and curated research resources including research guides, data sets, and documentation.
+- Developed and introduced a model to predict student academic performance.
+
+### Educational Programme Manager
+
+*University of London — London, England · 8/2014 – 12/2016*
+
+Oversaw the planning, communication, and implementation of an institution-wide alcohol education and effective-bystander training programme.
+
+- Planned and implemented a comprehensive research and assessment programme designed to measure student learning and development.
+- Supervised the delivery of 10–15 educational programmes each week, serving 1,500–2,500 students each term.
+
+### On-Site Director, Oxford Talent Identification Programme
+
+*University of Oxford — Oxford, England · Summer 2007 & Summer 2014 (Summer Programmes, Seasonal)*
+
+Directed operational and instructional leadership for the Oxford Talent Identification Programme. Managed staff training, instructional oversight, disciplinary processes, site finances, and logistical coordination. Supervised and mentored leadership staff. Oversaw day-to-day operations, including project scoping, resource allocation, and outcome communication. Ensured seamless logistical and financial operations to support programme goals and stakeholder satisfaction.
+
+### Associate Director of Residence Life
+
+*University of Durham — Durham, England · 7/2008 – 8/2014*
+
+Promoted from Assistant Director for Student Conduct Administration to Associate Director, overseeing strategic and innovative leadership across student service areas, including residence life, student conduct, diversity education, academic support, and student organisations.
+
+- Recruited, hired, trained, and coached diverse teams, including full-time staff, graduate staff, undergraduate staff, and interns, while fostering mentorship and professional development. Researched, documented, and communicated the source and scope of project work for all personnel under my supervision.
+- Managed operational logistics, event planning, and facilities for university programmes, ensuring efficient resource utilisation.
+- Oversaw the administration of 1,000+ cases of student discipline involving 2,000+ individuals each year.
+- Administered campus-wide community conflict-management and resolution policies, including community agreements and mediation programmes; also designed and implemented academic intervention programmes to enhance student success, incorporating mentorship, skills development, and collaboration with faculty and families.
+- Prevented suspension and expulsion by developing and implementing an academic intervention and recovery programme for struggling students; the programme consisted of one-to-one mentorship, group enrichment activities, parent and family initiatives, faculty collaboration, and life-skills training.
+- Advocated for inclusive practices and engaged with diverse stakeholder groups to support institution-wide initiatives and educational outcomes.

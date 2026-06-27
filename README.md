@@ -1,16 +1,28 @@
-AdaResume README.md
+# AdaResume
 
-This README.MD supports a templated repository that users can use to efficiently build a Quarto website. Quarto supports the ability to build simple websites with high quality visual appeal and modern website features including support for accessibility and adaptive technologies. When combined with GitHub Pages, Quarto forms the backbone of a free and open source published website.
+A starter template for turning your résumé into a polished personal website using [Quarto](https://quarto.org/) and publishing it for free on [GitHub Pages](https://pages.github.com/). You do not need to know HTML, CSS, or JavaScript. Quarto builds the site for you from plain-text files. If you can edit a document and copy-paste a few commands, you can use this template.
 
 # How To Use
 
-Professionals who have an interest in quickly sharing a polished version of their resume online, should copy this repository's `.gitignore`, `index.qmd`, `README.md`, and `_quarto.yml` files to a new local directory (and then also initiate that directory as a new git repository and push it to GitHub). This means, in practice, downloading this repository’s base template files manually from GitHub to set up a new repository.
+The recommended workflow is to download the files in this repository to a new folder on your computer (rather than forking the project on GitHub). Downloading gives you a clean starting point that lives entirely under your own GitHub account, with no template-fork relationship pointing back here.
 
-Alternatively, users can fork this repository and clone it to a local working space. 
+**The big picture:**
 
-From there, use the series of suggested prompts below (within an agentic IDE) to build a professional resume in website form using Quarto.
+1. Download the template files to a folder on your computer.
+2. Open the folder in an agentic IDE (a code editor that can read and edit your files in response to plain-English instructions in a chat panel). Examples include [Windsurf](https://windsurf.com/) and [Cursor](https://cursor.com/).
+3. Drop your own résumé (PDF or Word) into the `assets/` folder, using any filename other than `Ada_Lovelace_CV.pdf`. (This means saving a copy of your resume there in that assets folder).
+4. Paste the Setup prompt (further down this README) into your IDE's agentic chat panel. The agent will rewrite the website so it reflects your résumé instead of the Ada Lovelace example.
+5. Preview the site locally to confirm it looks the way you want.
+6. Push the project to a new repository on your GitHub account.
+7. Publish the site to GitHub Pages with a single Quarto command.
 
-Additionally this README.MD will guide an agentic IDE (integrated development environment) in building the site.
+**How to download the template files:**
+
+1. On this repository's GitHub page, click the green **Code** button and choose **Download ZIP**.
+2. Unzip the file into a new folder on your computer. A short folder name like `my-resume-site` works well.
+3. Open that folder in your agentic IDE.
+
+The rest of this README walks you through each step in order.
 
 # Core Website Design + Engineering Principles
 
@@ -46,16 +58,23 @@ Always use the Quarto-specific approach to publication via GitHub pages.
 
 ## Setup
 
-Ingredients: 
-- You will need one fresh resume of yours in Word or PDF format. 
-- You will need to have Quarto installed on your system to build and preview the website. You can download Quarto from https://quarto.org/docs/get-started/. 
-- The Git cli should also be installed to manage version control and deployment. 
-- And, also helpful to have installed will be the GitHub specific cli tool: https://cli.github.com/. 
-- Finally also you will need an agentic IDE like Devin (formerly Windsurf), Cursor, or another similar IDE.
+**What you'll need before you start:**
 
-Procedure + Method:
-- Once you are working locally, replace the `assets/Ada_Lovelace_CV.pdf` file with your own resume in PDF format. 
-- Then, use the agentic IDE to help you make any necessary edits to the website to ensure it reflects your personal information and experience.
+- **An up-to-date résumé** in Word (`.docx`) or PDF format.
+- **[Quarto](https://quarto.org/docs/get-started/)** — the tool that builds the website. Free, with installers for Mac, Windows, and Linux.
+- **[Git](https://git-scm.com/downloads)** — the version-control software that tracks file changes and pushes them to GitHub. Most Macs already include it; check by running `git --version` in a terminal.
+- **[GitHub CLI (`gh`)](https://cli.github.com/)** — a command-line tool that creates GitHub repositories for you. After installing, run `gh auth login` once to sign in to your GitHub account.
+- **An agentic IDE** such as [Windsurf](https://windsurf.com/) or [Cursor](https://cursor.com/).
+- **A free [GitHub](https://github.com/) account** if you don't already have one.
+
+If any of these are unfamiliar, follow the links above (each tool's homepage has a short installer/setup guide).
+
+**It may seem like a lot of effort, but it's really not.** Once you've done it once, you'll be able to reuse the process for future updates. And remember this effort is open source and free.
+
+**What to do:**
+
+1. Copy your résumé into the `assets/` folder of this project. Give it any filename other than `Ada_Lovelace_CV.pdf` — for example, `MyName_Resume.pdf` is fine. (The Setup prompt deliberately ignores any file named `Ada_Lovelace_CV.pdf` so the sample résumé doesn't get used by mistake.)
+2. Open your agentic IDE's chat panel and paste the Setup prompt below. The agent will read your résumé, rewrite `_quarto.yml` and `index.qmd` to match, and let you know when it's done.
 
 Use this suggested prompt:
 ```
@@ -155,7 +174,7 @@ Tell the user that the rewrite is complete. Do NOT run `quarto render`, do NOT p
 
 ## Verify the Build
 
-After the Setup step finishes, confirm that the website renders cleanly on your machine before you commit anything. You will need Quarto installed (https://quarto.org/docs/get-started/).
+After the Setup step finishes, confirm that the website renders cleanly on your machine before you commit anything. Reminder, you will need Quarto installed (https://quarto.org/docs/get-started/).
 
 You can run the build yourself:
 
@@ -163,7 +182,96 @@ You can run the build yourself:
 quarto preview
 ```
 
-Then check that the command exits without errors and that `_site/index.html` and `_site/index.pdf` are both produced. Or use this prompt to have your agentic IDE do it:
+Then check that the command exits without errors and that `_site/index.html` and `_site/index.pdf` are both produced.
+
+If `quarto preview` reports errors, the most common causes are: a typo in `_quarto.yml`, an unbalanced backtick or list indent in `index.qmd`, or missing software (Quarto itself, or LaTeX if you're producing a PDF). Consider asking the agentic IDE to help you fix the issue by providing that IDE with a copy of the error message.
+
+A succesfful update should also launch a web browser window with the rendered resume. You can use the browser to navigate to different sections of the resume and verify that the content is correct. If you need to make corrections to the resume you can edit the `index.qmd` file. As you make edits to `index.qmd` (and save them), the browser will automatically refresh to show your changes.
+
+If you'd rather have your agentic IDE handle this verification step (or any of the steps below), see the [Optional Prompts for Agentic Verification + Deployment](#optional-prompts-for-agentic-verification--deployment) section near the end of this README.
+
+## Commit Changes to GitHub
+
+Once your preview looks right, save your work and upload it to GitHub. This step uses two command-line tools:
+
+- **[Git](https://git-scm.com/)** — tracks changes to your files.
+- **[GitHub CLI (`gh`)](https://cli.github.com/)** — creates a new repository on your GitHub account from your local folder.
+
+If you haven't already, sign in to GitHub from the command line by running `gh auth login` once. It will open a browser window and walk you through signing in.
+
+**First time only — create your GitHub repository.** Open a terminal in your project folder and run these commands in order:
+
+```bash
+git init
+git branch -M main
+git add .
+git commit -m "Initial commit"
+gh repo create my-resume --public --source=. --remote=origin --push
+```
+
+Replace `my-resume` with whatever name you'd like. Common choices are `resume`, your own name, or `<your-github-username>.github.io`. (Free GitHub Pages publishing requires a **public** repository; private repositories need a paid GitHub plan.)
+
+What that last command is doing: `gh repo create` creates a new repository on your GitHub account, links your local folder to it as the `origin` remote, and pushes your initial commit — all in one step.
+
+**Every time after — save and push ongoing updates.** Whenever you've changed your résumé and previewed the result locally, run:
+
+```bash
+git add .
+git commit -m "Updated to match my own resume"
+git push
+```
+
+What each line does, in plain English:
+
+- `git add .` — stages every changed file in this folder so Git knows to include them in the next save. The `.` means "everything here".
+- `git commit -m "Updated to match my own resume"` — saves a snapshot with a short note describing what changed. The message between the quotes can be anything; keep it short and useful.
+- `git push` — uploads that snapshot from your computer to your GitHub repository.
+
+If you'd prefer to have your agentic IDE create the repository and run these commands for you, see the [Optional Prompts](#optional-prompts-for-agentic-verification--deployment) section near the end of this README.
+
+## Publish Website to GitHub Pages Using Quarto
+
+[GitHub Pages](https://pages.github.com/) is GitHub's free website-hosting service. Quarto includes a single command that builds your site and publishes it there:
+
+```bash
+quarto publish gh-pages
+```
+
+The first time you run this in a project, Quarto will:
+
+1. Confirm the GitHub repository it should publish to.
+2. Create a `gh-pages` branch on that repository — a separate branch dedicated to the built website, kept apart from your source files on `main`.
+3. Build the site and upload the result.
+4. Print the public URL where your site is now live, typically `https://<your-github-username>.github.io/<repo-name>/`.
+
+Each subsequent time you update your résumé:
+
+1. Commit and push your edits (see "Commit Changes to GitHub" above).
+2. Run `quarto publish gh-pages` again.
+
+If the command fails, the most common reasons are:
+
+- The project isn't on GitHub yet — see "Commit Changes to GitHub" above.
+- You aren't signed in to the GitHub CLI — run `gh auth login`.
+- You have uncommitted changes — commit them first, then re-run.
+
+Quarto's full publishing guide: https://quarto.org/docs/publishing/github-pages.html.
+
+# Optional Prompts for Agentic Verification + Deployment
+
+The two preceding sections ()"Commit Changes to GitHub" and "Publish Website to GitHub Pages Using Quarto") assume you'd like to run the commands yourself. That's the most direct path and gives you a feel for how the pieces fit together.
+
+If you'd prefer to have your agentic IDE drive the process for you, the prompts below are alternative options. Paste any of them into your IDE's chat panel and the agent will follow the steps. The available alternative prompts are:
+
+- **Verify the build** — runs `quarto render` and reports whether the site built cleanly. An alternative to running `quarto preview` yourself in "Verify the Build" above.
+- **Review the changes** — produces a read-only audit of what the Setup prompt changed in `_quarto.yml` and `index.qmd`. Useful as a sanity check before you commit.
+- **Configure as a GitHub repository** — creates and connects the GitHub repository for you. An alternative to the manual `git` and `gh` commands in "Commit Changes to GitHub" above.
+
+Use any of these whenever you'd rather be hands-off; skip them whenever you'd rather be hands-on.
+
+## Verify the Build (Agentic Alternative)
+
+Paste this prompt into your IDE's chat to have the agent verify the site builds cleanly:
 
 ```
 You are an agentic IDE assistant working inside a Quarto resume website project. Verify that the site renders cleanly. Do exactly the following — no more, no less.
@@ -200,9 +308,9 @@ STEP 5 — Hard prohibitions.
 
 ## Review the Changes
 
-Once the build is clean, ask the agent for an audit of what the Setup step actually changed. This is a useful checkpoint before you commit and push.
+This prompt produces a read-only audit of what the Setup step changed in `_quarto.yml` and `index.qmd`. Useful as a sanity check before you commit — particularly if you want to confirm the agent didn't drop or invent anything compared to your source résumé.
 
-Use this prompt:
+Paste this prompt into your IDE's chat:
 
 ```
 You are an agentic IDE assistant. The Setup step has rewritten `_quarto.yml` and `index.qmd` for this Quarto resume website using a source resume from the `assets/` folder. Produce a concise audit report. This step is READ-ONLY: do NOT modify any files.
@@ -228,14 +336,11 @@ Hard prohibitions:
 
 ## Configure as a GitHub Repository
 
-To publish the site with `quarto publish gh-pages`, the project must live in a GitHub repository owned by you. There are two common starting points:
+This prompt handles everything in the "Commit Changes to GitHub" section automatically: it initializes Git in your project folder if needed, checks whether the folder is already linked to a GitHub repository, creates a new one on your account if not, and pushes your first commit. It will ask for confirmation before any destructive step.
 
-- **Path A — You forked the template on GitHub.** Your fork is already a repository on your account. You may want to rename it to something personal.
-- **Path B — You downloaded the template files manually.** You will need to initialize a local git repo and create a fresh repo on GitHub.
+Before running this prompt, make sure you've installed the [GitHub CLI](https://cli.github.com/) and signed in once with `gh auth login`.
 
-Either way, install the GitHub CLI (`gh`) first if you have not — see https://cli.github.com/ — and authenticate with `gh auth login`.
-
-If you wish, you can use this prompt to have your agentic IDE handle it:
+Paste this prompt into your IDE's chat:
 
 ```
 You are an agentic IDE assistant. Configure this local Quarto resume project as a GitHub repository owned by the user. Follow every step in order. Ask the user before any destructive action.
@@ -279,7 +384,7 @@ c. If they accept, run `gh repo rename <new-name>`. Note that this updates both 
 STEP 5 — Confirm and report.
 
 a. Run `git remote -v`. Show the user the final `origin` URL.
-b. Tell the user the next step is to render the site cleanly (see "Verify the Build" in `README.md`) and then deploy with `quarto publish gh-pages` (see the "Deployment" section of `README.md`).
+b. Tell the user the next step is to render the site cleanly (see "Verify the Build" in `README.md`) and then deploy with `quarto publish gh-pages` (see "Publish Website to GitHub Pages Using Quarto" in `README.md`).
 
 STEP 6 — Hard prohibitions.
 
